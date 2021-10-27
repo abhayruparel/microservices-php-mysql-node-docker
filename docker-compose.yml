@@ -18,6 +18,7 @@ services:
 
   website:
     container_name: tea_store_php
+    image: tea_store_php_image
     build:
       context: .
       dockerfile: Dockerfile
@@ -37,10 +38,11 @@ services:
 
   node-app:
     container_name: tea_store_node
+    image: tea_store_node_image
     build:
       context: .
       dockerfile: Dockerfile-node
     volumes:
       - ./app.js:/usr/src/app/app.js
     ports:
-      - 80:8001
+      - 8082:8001
