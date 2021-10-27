@@ -65,19 +65,19 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="image.html">Image</a>
+                <a class="nav-link" aria-current="page" href="image.php">Image</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="persistence.html">Persistance</a>
+                <a class="nav-link" aria-current="page" href="persistence.php">Persistance</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="recommend.html">Persistance</a>
+                <a class="nav-link" aria-current="page" href="recommend.php">Persistance</a>
               </li>
             </ul>
           </div>
           <div class="justify-content-end">
             <div class="col-4">
-              <a href="signin.php" class="btn btn-outline-dark">Login</a>
+              <a href="#" class="btn btn-outline-dark"><?php echo $_SESSION['email']; ?></a>
             </div>
           </div>
         </div>

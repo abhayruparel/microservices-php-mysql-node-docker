@@ -1,8 +1,8 @@
 <?php
 session_start();
-?>
-<?php
-$conn = new mysqli("localhost", "root", "", "tea_store");
+
+$conn = new mysqli("mysql", "root", "secret", "tea_store");
+
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }

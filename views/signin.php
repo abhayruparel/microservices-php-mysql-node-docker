@@ -10,7 +10,8 @@ if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $_SESSION['email'] = $email;
     $password = $_POST["password"];
-    $cnn = mysqli_connect("localhost", "root", "", "tea_store");
+    // $conn = new mysqli("mysql", "root", "secret");
+    $cnn = mysqli_connect("mysql", "root", "secret", "tea_store");
     $qry = "select * from register where email ='$email' and password ='$password'";
 
     $result = $cnn->query($qry);
@@ -36,8 +37,6 @@ if (isset($_POST["submit"])) {
         echo "Value not found";
     }
 }
-
-
 ?>
 
 <html>
