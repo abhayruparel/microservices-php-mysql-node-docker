@@ -30,6 +30,11 @@ router.get('/login', function(req,res){
 	res.redirect("http://localhost:8080/signin.php");
 	console.log("redirected to login page");
 });
+router.get("/admin", function (req, res) {
+    // res.redirect("http://localhost:8080/");
+    res.redirect("http://localhost:8080/admin/main");
+    console.log("redirected to login page");
+});
 
 
 app.use(express.static(path));
