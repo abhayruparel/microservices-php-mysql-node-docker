@@ -71,7 +71,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <a class="nav-link" aria-current="page" href="persistence.php">Persistance</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="recommend.php">Persistance</a>
+                <a class="nav-link" aria-current="page" href="recommend.php">Recommended</a>
               </li>
             </ul>
           </div>
