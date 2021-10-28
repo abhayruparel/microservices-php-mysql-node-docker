@@ -2,7 +2,7 @@
 
 
 
-        <footer class="footer text-center">SE G-09 </footer>
+        <footer class="footer text-center">TeaStore </footer>
     </div>
     <!-- /#wrapper -->
     <!-- jQuery -->
