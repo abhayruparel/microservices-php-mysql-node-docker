@@ -12,13 +12,12 @@ services:
       - MYSQL_TCP_PORT=3306
     volumes:
       - datafiles:/var/lib/mysql
-    restart: always
+    restart: unless-stopped
     ports:
       - 3306:3306
 
   website:
     container_name: tea_store_php
-    image: tea_store_php_image
     build:
       context: .
       dockerfile: Dockerfile
@@ -38,7 +37,6 @@ services:
 
   node-app:
     container_name: tea_store_node
-    image: tea_store_node_image
     build:
       context: .
       dockerfile: Dockerfile-node
