@@ -34,13 +34,3 @@ services:
       - 8083:443
     depends_on:
       - mysql
-
-  node-app:
-    container_name: tea_store_node
-    build:
-      context: .
-      dockerfile: Dockerfile-node
-    volumes:
-      - ./app.js:/usr/src/app/app.js
-    ports:
-      - 8082:8001
